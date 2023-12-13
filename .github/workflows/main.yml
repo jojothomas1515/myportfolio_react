@@ -1,0 +1,42 @@
+---
+name: Jojo's portfolio with react
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+
+  can_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: install dependencies
+        run: npm install
+
+      - name: build the project
+        run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: can_build
+    environment: dev
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: install setup ssh
+
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{secrets.PRIVATE_KEY}}" > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_host
+
+      - name: connect and pull from github
+        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}myportfolio_react && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && npm run build && exit"
+
+      - name: cleanup
+        run: rm -rf ~/.ssh
