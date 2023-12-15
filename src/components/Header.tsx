@@ -1,10 +1,21 @@
-import {ReactElement} from "react";
+import {ReactElement, useRef} from "react";
 import "../styles/Header.css"
 import {FaGithub, FaLaptopCode, FaLinkedin} from "react-icons/fa"
 import {FaXTwitter} from "react-icons/fa6";
 import {Link} from 'react-router-dom'
 
 function Header(): ReactElement {
+
+  const navToggle = useRef<HTMLInputElement>(null);
+
+  const toggleNav = () => {
+    if (navToggle.current?.checked) {
+      navToggle.current.checked = false;
+    } else if (navToggle.current?.checked === false) {
+      navToggle.current.checked = true;
+    }
+  }
+
   return (
     <>
       <header>
@@ -15,7 +26,12 @@ function Header(): ReactElement {
           </h3>
         </div>
 
-
+        <button className={'nav-toggle-button'} onClick={toggleNav}>
+          <span className={'nav-button-bar'}/>
+          <span className={'nav-button-bar'}/>
+          <span className={'nav-button-bar'}/>
+        </button>
+        <input type="checkbox" id={'nav-toggle'} ref={navToggle}/>
         <nav>
           <div className={'pages-link'}>
             <Link to={"/home"}> Home </Link>

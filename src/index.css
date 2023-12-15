@@ -1,5 +1,10 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=index.css.map */
