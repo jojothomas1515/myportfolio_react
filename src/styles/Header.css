@@ -2,9 +2,8 @@ header {
   display: flex;
   position: relative;
   height: 70px;
-  border: 1px solid red;
   align-items: center;
-  z-index: 1000;
+  z-index: 1001;
 }
 header .site-title {
   display: flex;
@@ -20,25 +19,32 @@ header .site-title {
 header #nav-toggle {
   display: none;
 }
-header #nav-toggle:checked ~ nav {
+header #nav-toggle:checked ~ #mobile-nav {
   top: 100%;
 }
 header #nav-toggle:checked ~ .nav-toggle-button .nav-button-bar:first-child {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(0.25rem, 0.3rem);
+  width: 2.2rem;
+}
+header #nav-toggle:checked ~ .nav-toggle-button .nav-button-bar:nth-child(2) {
+  border: 1px solid red;
+  width: 0;
 }
 header #nav-toggle:checked ~ .nav-toggle-button .nav-button-bar:last-child {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(0.3rem, -0.25rem);
+  width: 2.2rem;
 }
 header .nav-toggle-button {
   display: none;
   margin-left: auto;
   margin-right: 1rem;
   cursor: pointer;
-  width: max-content;
   height: 3rem;
+  width: 3rem;
   box-shadow: inset 0 0 2px 0 black;
   outline: none;
   border: none;
+  z-index: 1000;
 }
 @media (max-width: 720px) {
   header .nav-toggle-button {
@@ -65,7 +71,7 @@ header .nav-toggle-button:hover .nav-button-bar:nth-child(2) {
 header .nav-toggle-button:hover .nav-button-bar:nth-child(3) {
   width: 2rem;
 }
-header nav {
+header #full-nav {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -76,56 +82,89 @@ header nav {
   transition: 200ms top ease-in-out;
 }
 @media screen and (max-width: 720px) {
-  header nav {
-    padding: 1rem;
-    position: absolute;
-    flex-direction: column;
-    width: 100%;
-    background-color: gray;
-    left: 0;
-    top: -500%;
-  }
-  header nav .pages-link {
-    flex-direction: column;
-    width: 100%;
-  }
-  header nav .pages-link a {
-    border-radius: 0;
-  }
-  header nav .socials {
-    justify-content: center;
-    width: 100%;
+  header #full-nav {
+    display: none;
   }
 }
-header nav .socials {
+header #full-nav .socials {
   display: flex;
   align-items: center;
   margin-left: auto;
   font-size: 2rem;
 }
-header nav .socials a {
+header #full-nav .socials a {
   margin-left: 1rem;
 }
-header nav .pages-link {
+header #full-nav .pages-link {
   display: flex;
   align-items: center;
   margin-left: auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   justify-content: center;
+  border-radius: 2rem;
   border: 1px solid black;
-  border-radius: 5px;
   box-shadow: inset 0 0 2px 0 black;
   padding: 0.5rem 1rem;
 }
-header nav .pages-link a {
+header #full-nav .pages-link a {
+  margin-inline: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+header #full-nav .pages-link a:hover {
+  color: white;
+  background-color: gray;
+}
+header #full-nav .pages-link a:active {
+  color: white;
+  background-color: gray;
+}
+header #mobile-nav {
+  display: none;
+  position: absolute;
+  top: -300%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 2px 0 black;
+  padding: 1rem;
+  transition: 200ms top ease-in-out;
+  z-index: 999;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
+@media screen and (max-width: 720px) {
+  header #mobile-nav {
+    display: flex;
+  }
+}
+header #mobile-nav .pages-link {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+header #mobile-nav .pages-link a {
   margin-inline: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
-header nav .pages-link a:hover {
+header #mobile-nav .pages-link a:hover {
   color: white;
   background-color: black;
+}
+header #mobile-nav .socials {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+header #mobile-nav .socials a {
+  margin-left: 1rem;
+}
+header #mobile-nav .socials a:hover {
+  color: gray;
 }
 
 /*# sourceMappingURL=Header.css.map */
