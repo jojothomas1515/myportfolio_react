@@ -1,0 +1,24 @@
+main section.intro {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main section.intro .hello {
+  margin-inline: auto;
+}
+main section.intro .hello h1 {
+  font-size: 2rem;
+}
+main section.intro .hello h5 {
+  font-size: 1rem;
+}
+main section.intro .image_container {
+  margin-inline: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 360px;
+}
+
+/*# sourceMappingURL=Home.css.map */

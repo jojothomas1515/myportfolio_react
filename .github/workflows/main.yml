@@ -36,7 +36,7 @@ jobs:
           ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_host
 
       - name: connect and pull from github
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}myportfolio_react && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && npm run build && exit"
+        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }}myportfolio_react && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && sudo ./setup.sh && exit"
 
       - name: cleanup
         run: rm -rf ~/.ssh
