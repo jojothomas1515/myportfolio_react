@@ -19,7 +19,7 @@ class Home extends Component {
               </div>
             </div>
             <div className={'image_container'}>
-              <img id={'fine_boy'} src={require('../images/jojo_thomas.jpeg')}/>
+              <img id={'fine_boy'} src={require('../images/jojo_thomas.jpeg')} alt={'Joseph Thomas on a field'}/>
             </div>
           </section>
         </main>
