@@ -1,5 +1,5 @@
 import {ReactElement, useEffect, useRef} from "react";
-import "../styles/Header.css"
+import "../styles/components/Header.css"
 import {FaGithub, FaLaptopCode, FaLinkedin} from "react-icons/fa"
 import {FaXTwitter} from "react-icons/fa6";
 import {Link} from 'react-router-dom'
