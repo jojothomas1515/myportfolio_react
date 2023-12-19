@@ -23,4 +23,45 @@ main {
       max-width: 360px;
     }
   }
+
+
+  section.soft_skills {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .soft_skill_container {
+      margin-inline: auto;
+      border-radius: 2rem;
+      border: 1px solid #274142;
+      overflow: hidden;
+      max-width: 360px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      transition: all 0.3s ease-in-out;
+
+      svg {
+        font-size: 2rem;
+        color: #274142;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 }
