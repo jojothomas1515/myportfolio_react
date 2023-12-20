@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/pages/Home.css';
-import { FaMeetup, FaRobot, FaTerminal, FaTrophy } from 'react-icons/fa';
+import { FaRobot, FaTerminal, FaTrophy } from 'react-icons/fa';
 
 class Home extends Component {
 
