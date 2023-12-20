@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/pages/Home.css';
-import { FaRobot, FaTerminal, FaTrophy } from 'react-icons/fa';
+import { FaDev, FaRobot, FaTerminal, FaTools, FaTrophy } from 'react-icons/fa';
+import { FaUserGear } from 'react-icons/fa6';
 
 class Home extends Component {
 
@@ -15,8 +16,8 @@ class Home extends Component {
               </h1>
               <h5>I am and <b>focused developer</b> who is currently based in Edo, Nigeria.</h5>
               <div className='pc_only'>
-                <div className='ss'>Backend Developer</div>
-                <div className='ss'>DevOps Engineer</div>
+                <div className='ss'><FaUserGear /> Backend Developer</div>
+                <div className='ss'><FaTools /> DevOps Engineer</div>
               </div>
             </div>
             <div className={'image_container'}>
@@ -40,6 +41,9 @@ class Home extends Component {
               <h3>Lazy Developer</h3>
               <p>I'm a lazy developer, i don't like to repeat myself, so i automate repetitive tasks</p>
             </div>
+          </section>
+
+          <section className={'selected_works'}>
           </section>
         </main>
       </>

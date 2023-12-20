@@ -4,15 +4,43 @@ main section.intro {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
+  align-items: center;
 }
 main section.intro .hello {
   margin-inline: auto;
 }
 main section.intro .hello h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  max-width: 780px;
+}
+@media screen and (max-width: 780px) {
+  main section.intro .hello h1 {
+    font-size: 2rem;
+  }
 }
 main section.intro .hello h5 {
   font-size: 1rem;
+  font-weight: lighter;
+}
+main section.intro .hello .pc_only {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 780px) {
+  main section.intro .hello .pc_only {
+    display: none;
+  }
+}
+main section.intro .hello .pc_only .ss {
+  border: 1px solid #274142;
+  border-radius: 2rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background-color: #274142;
+  color: white;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
 }
 main section.intro .image_container {
   margin-inline: auto;
@@ -39,6 +67,7 @@ main section.soft_skills .soft_skill_container {
   background-color: var(--color-primary);
   color: var(--color-white);
   transition: all 0.3s ease-in-out;
+  gap: 0.5rem;
 }
 main section.soft_skills .soft_skill_container svg {
   font-size: 2rem;
@@ -48,6 +77,7 @@ main section.soft_skills .soft_skill_container:hover {
   transform: scale(1.1);
 }
 main section.soft_skills .soft_skill_container h3 {
+  margin: 0;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
