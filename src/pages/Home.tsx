@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/pages/Home.css';
-import { FaRobot, FaTerminal, FaTrophy } from 'react-icons/fa';
+import { FaArrowRight, FaRobot, FaTerminal, FaTools, FaTrophy } from 'react-icons/fa';
+import { FaUserGear } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -15,8 +17,8 @@ class Home extends Component {
               </h1>
               <h5>I am and <b>focused developer</b> who is currently based in Edo, Nigeria.</h5>
               <div className='pc_only'>
-                <div className='ss'>Backend Developer</div>
-                <div className='ss'>DevOps Engineer</div>
+                <div className='ss'><FaUserGear /> Backend Developer</div>
+                <div className='ss'><FaTools /> DevOps Engineer</div>
               </div>
             </div>
             <div className={'image_container'}>
@@ -39,6 +41,27 @@ class Home extends Component {
               <FaRobot />
               <h3>Lazy Developer</h3>
               <p>I'm a lazy developer, i don't like to repeat myself, so i automate repetitive tasks</p>
+            </div>
+          </section>
+
+          <section className={'featured_projects'}>
+            <div className='section_title_container'>
+              <h1>Selected Work</h1>
+
+              <Link to={'/projects'}>
+                View All
+
+                <FaArrowRight />
+              </Link>
+            </div>
+            <div className='featured'>
+              <div className='featured_project_card'>
+                <img src={require('../images/meetdev.png')} alt={'meet-devs'} />
+                <div className='featured_project_card_details'>
+                  <h3>MeetDevs</h3>
+                  <p>A platform to connect dev with people who need them</p>
+                </div>
+              </div>
             </div>
           </section>
         </main>
