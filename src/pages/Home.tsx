@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/pages/Home.css';
-import { FaDev, FaRobot, FaTerminal, FaTools, FaTrophy } from 'react-icons/fa';
+import { FaArrowRight, FaRobot, FaTerminal, FaTools, FaTrophy } from 'react-icons/fa';
 import { FaUserGear } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -43,7 +44,25 @@ class Home extends Component {
             </div>
           </section>
 
-          <section className={'selected_works'}>
+          <section className={'featured_projects'}>
+            <div className='section_title_container'>
+              <h1>Selected Work</h1>
+
+              <Link to={'/projects'}>
+                View All
+
+                <FaArrowRight />
+              </Link>
+            </div>
+            <div className='featured'>
+              <div className='featured_project_card'>
+                <img src={require('../images/meetdev.png')} alt={'meet-devs'} />
+                <div className='featured_project_card_details'>
+                  <h3>MeetDevs</h3>
+                  <p>A platform to connect dev with people who need them</p>
+                </div>
+              </div>
+            </div>
           </section>
         </main>
       </>
