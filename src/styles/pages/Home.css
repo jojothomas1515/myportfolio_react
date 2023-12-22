@@ -64,8 +64,6 @@ main section.soft_skills .soft_skill_container {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-primary);
-  color: var(--color-white);
   transition: all 0.3s ease-in-out;
   gap: 0.5rem;
 }
