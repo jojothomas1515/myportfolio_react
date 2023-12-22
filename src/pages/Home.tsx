@@ -3,6 +3,8 @@ import '../styles/pages/Home.css';
 import { FaArrowRight, FaRobot, FaTerminal, FaTools, FaTrophy } from 'react-icons/fa';
 import { FaUserGear } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import FeaturedProjectCard from '../components/FeaturedProjectCard';
+import { LanguageAndFrameworkCard, LanguageAndFrameworksContainer } from '../components/LanguageAndFrameworks';
 
 class Home extends Component {
 
@@ -15,7 +17,7 @@ class Home extends Component {
             <div className={'hello'}>
               <h1> Hello, my name is Joseph Thomas Ehigie
               </h1>
-              <h5>I am and <b>focused developer</b> who is currently based in Edo, Nigeria.</h5>
+              <h5>I am a <b>focused developer</b> who is currently based in Edo, Nigeria.</h5>
               <div className='pc_only'>
                 <div className='ss'><FaUserGear /> Backend Developer</div>
                 <div className='ss'><FaTools /> DevOps Engineer</div>
@@ -55,14 +57,32 @@ class Home extends Component {
               </Link>
             </div>
             <div className='featured'>
-              <div className='featured_project_card'>
-                <img src={require('../images/meetdev.png')} alt={'meet-devs'} />
-                <div className='featured_project_card_details'>
-                  <h3>MeetDevs</h3>
-                  <p>A platform to connect dev with people who need them</p>
-                </div>
-              </div>
+              <FeaturedProjectCard image={require('../images/meetdev.png')} alt={'meet-devs'} title={'MeetDevs'}
+                                   description={'A platform to connect dev with people who need them'}
+                                   githubLink={'https://github.com/Ayobami6/MeetDevs'}
+                                   liveLink={'https://meet-devs.vercel.app'} />
             </div>
+          </section>
+          <section className={'familiar_tech'}>
+            <h1> Familiar Frameworks and Programming languages</h1>
+            <p>Some of the Programming languages and frameworks i'm well familiar with</p>
+
+            <LanguageAndFrameworksContainer>
+              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
+                                        name={'Python'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/javascript-39397.png')} altText={'Javascript Logo'}
+                                        name={'Javascript'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/ts-logo-512.png')} altText={'Typescript Logo'}
+                                        name={'Typescript'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
+                                        name={'Python'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
+                                        name={'Python'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
+                                        name={'Python'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
+                                        name={'Python'} />
+            </LanguageAndFrameworksContainer>
           </section>
         </main>
       </>
