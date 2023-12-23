@@ -47,7 +47,7 @@ function Header(): ReactElement {
         </nav>
         <nav id={'mobile-nav'}>
           <div className={'pages-link'}>
-            <Link to={'/home'}> Home </Link>
+            <Link to={'/'}> Home </Link>
             <Link to={'/projects'}> Project </Link>
             <Link to={'/abouts'}> About </Link>
           </div>
