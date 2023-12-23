@@ -1,6 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
+import '../styles/components/FeaturedProjects.css';
+
+interface FeaturedProjectsProps {
+  children: React.ReactNode;
+}
+
+export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ children }): React.JSX.Element => {
+  return (
+    <div className={'featured'}>
+      {children}
+    </div>
+  );
+};
 
 interface FeaturedProjectCardProps {
   image: string;
@@ -11,7 +24,7 @@ interface FeaturedProjectCardProps {
   liveLink: string;
 }
 
-const FeaturedProjectCard: React.FC<FeaturedProjectCardProps> =
+export const FeaturedProjectCard: React.FC<FeaturedProjectCardProps> =
   ({
      image,
      alt,
@@ -33,4 +46,4 @@ const FeaturedProjectCard: React.FC<FeaturedProjectCardProps> =
     );
   };
 
-export default FeaturedProjectCard;
+

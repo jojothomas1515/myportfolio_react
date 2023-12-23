@@ -12,17 +12,16 @@ main section.intro .hello {
 main section.intro .hello h1 {
   font-size: 3rem;
   max-width: 780px;
-  text-align: center;
 }
 @media screen and (max-width: 780px) {
   main section.intro .hello h1 {
     font-size: 2rem;
+    text-align: center;
   }
 }
 main section.intro .hello h5 {
   font-size: 1rem;
   font-weight: lighter;
-  text-align: center;
 }
 main section.intro .hello .pc_only {
   display: flex;
@@ -112,75 +111,6 @@ main section.featured_projects .section_title_container a {
 main section.featured_projects .section_title_container a:hover {
   scale: 1.05;
   box-shadow: 0 0 5px 0 #274142;
-}
-main section.featured_projects .featured .featured_project_card {
-  position: relative;
-  margin-top: 1rem;
-  border-radius: 2rem;
-  border: 1px solid #274142;
-  overflow: hidden;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  background-color: #274142;
-  color: white;
-  transition: all 0.3s ease-in-out;
-  gap: 0.5rem;
-}
-main section.featured_projects .featured .featured_project_card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-}
-main section.featured_projects .featured .featured_project_card:hover {
-  box-shadow: 0 0 10px #274142;
-}
-main section.featured_projects .featured .featured_project_card h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background-color: #274142;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 30px;
-  z-index: 1;
-}
-main section.featured_projects .featured .featured_project_card .view_live {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  box-shadow: 0 0 10px black;
-  line-height: 0;
-  border-radius: 50%;
-  color: #274142;
-  background-color: rgb(255, 255, 255);
-}
-main section.featured_projects .featured .featured_project_card .view_github {
-  position: absolute;
-  top: 1rem;
-  right: 4rem;
-  font-size: 2rem;
-  box-shadow: 0 0 10px black;
-  line-height: 0;
-  border-radius: 50%;
-  color: #274142;
-  background-color: rgb(255, 255, 255);
-}
-main section.featured_projects .featured .featured_project_card p {
-  font-size: 1rem;
-  position: absolute;
-  left: 1rem;
-  background-color: #274142;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 30px;
-  z-index: 1;
-  bottom: 0;
 }
 main section.familiar_tech {
   display: flex;

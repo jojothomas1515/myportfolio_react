@@ -3,8 +3,9 @@ import '../styles/pages/Home.css';
 import { FaArrowRight, FaRobot, FaTerminal, FaTools, FaTrophy } from 'react-icons/fa';
 import { FaUserGear } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import FeaturedProjectCard from '../components/FeaturedProjectCard';
+import { FeaturedProjectCard, FeaturedProjects } from '../components/FeaturedProjects';
 import { LanguageAndFrameworkCard, LanguageAndFrameworksContainer } from '../components/LanguageAndFrameworks';
+import ContactMe from '../components/ContactMe';
 
 class Home extends Component {
 
@@ -56,12 +57,13 @@ class Home extends Component {
                 <FaArrowRight />
               </Link>
             </div>
-            <div className='featured'>
+            <FeaturedProjects>
               <FeaturedProjectCard image={require('../images/meetdev.png')} alt={'meet-devs'} title={'MeetDevs'}
                                    description={'A platform to connect dev with people who need them'}
                                    githubLink={'https://github.com/Ayobami6/MeetDevs'}
                                    liveLink={'https://meet-devs.vercel.app'} />
-            </div>
+            </FeaturedProjects>
+
           </section>
           <section className={'familiar_tech'}>
             <h1> Familiar Frameworks and Programming languages</h1>
@@ -89,6 +91,9 @@ class Home extends Component {
                 imageUrl={require('../images/FastAPI.png')} altText={'FastApi Logo'}
                 name={'FastApi'} />
             </LanguageAndFrameworksContainer>
+          </section>
+          <section className='contact'>
+            <ContactMe/>
           </section>
         </main>
       </>

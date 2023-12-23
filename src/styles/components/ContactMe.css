@@ -1,0 +1,27 @@
+.contact_me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .contact_me {
+    justify-content: center;
+  }
+}
+.contact_me h1 {
+  color: #274142;
+}
+.contact_me a {
+  background-color: #274142;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  width: max-content;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=ContactMe.css.map */
