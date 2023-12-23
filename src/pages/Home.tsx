@@ -74,14 +74,20 @@ class Home extends Component {
                                         name={'Javascript'} />
               <LanguageAndFrameworkCard imageUrl={require('../images/ts-logo-512.png')} altText={'Typescript Logo'}
                                         name={'Typescript'} />
-              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
-                                        name={'Python'} />
-              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
-                                        name={'Python'} />
-              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
-                                        name={'Python'} />
-              <LanguageAndFrameworkCard imageUrl={require('../images/python-logo-only.png')} altText={'Python Logo'}
-                                        name={'Python'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/pngegg.png')} altText={'Node Logo'}
+                                        name={'Node JS'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/bash_logo.png')} altText={'Bash Logo'}
+                                        name={'Bash'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/c_logo.png')} altText={'C Logo'}
+                                        name={'C'} />
+
+              <LanguageAndFrameworkCard imageUrl={require('../images/pngwing.com.png')} altText={'Express Logo'}
+                                        name={'Express'} />
+              <LanguageAndFrameworkCard imageUrl={require('../images/django-logo-negative.png')} altText={'Django Logo'}
+                                        name={'Django'} />
+              <LanguageAndFrameworkCard
+                imageUrl={require('../images/FastAPI.png')} altText={'FastApi Logo'}
+                name={'FastApi'} />
             </LanguageAndFrameworksContainer>
           </section>
         </main>

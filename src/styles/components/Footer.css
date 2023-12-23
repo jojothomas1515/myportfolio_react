@@ -1,0 +1,30 @@
+footer {
+  color: #274142;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 2rem;
+}
+@media screen and (max-width: 400px) {
+  footer {
+    justify-content: center;
+  }
+}
+footer .links {
+  display: flex;
+  gap: 1rem;
+}
+footer .links a {
+  color: #274142;
+  text-decoration: none;
+  transition: 0.2s;
+}
+footer .links a:hover {
+  color: #274142;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Footer.css.map */
