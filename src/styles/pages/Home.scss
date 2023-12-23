@@ -13,6 +13,7 @@ main {
       h1 {
         font-size: 3rem;
         max-width: 780px;
+        text-align: center;
 
         @media screen and (max-width: 780px) {
           font-size: 2rem;
@@ -22,6 +23,7 @@ main {
       h5 {
         font-size: 1rem;
         font-weight: lighter;
+        text-align: center;
       }
 
       .pc_only {

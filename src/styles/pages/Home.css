@@ -12,6 +12,7 @@ main section.intro .hello {
 main section.intro .hello h1 {
   font-size: 3rem;
   max-width: 780px;
+  text-align: center;
 }
 @media screen and (max-width: 780px) {
   main section.intro .hello h1 {
@@ -21,6 +22,7 @@ main section.intro .hello h1 {
 main section.intro .hello h5 {
   font-size: 1rem;
   font-weight: lighter;
+  text-align: center;
 }
 main section.intro .hello .pc_only {
   display: flex;
