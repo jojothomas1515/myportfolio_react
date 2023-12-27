@@ -1,0 +1,52 @@
+main > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #274142;
+}
+@media screen and (max-width: 768px) {
+  main > h1 {
+    font-size: 2rem;
+  }
+}
+main > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  main > p {
+    font-size: 1rem;
+  }
+}
+main img {
+  max-width: 360px;
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+@media screen and (max-width: 768px) {
+  main img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
+main section.about {
+  gap: 1rem;
+}
+main section.about > div {
+  margin-top: 0.6rem;
+}
+main section.about h2 {
+  color: #274142;
+}
+main section.about p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  main section.about p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=About.css.map */

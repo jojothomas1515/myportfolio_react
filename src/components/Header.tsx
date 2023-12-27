@@ -37,7 +37,7 @@ function Header(): ReactElement {
           <div className={'pages-link'}>
             <Link to={'/'}> Home </Link>
             <Link to={'/projects'}> Project </Link>
-            <Link to={'/abouts'} ref={aboutLinkActiveRef}> About </Link>
+            <Link to={'/about'} ref={aboutLinkActiveRef}> About </Link>
           </div>
           <div className={'socials'}>
             <Link to={'https://www.github.com/jojothomas1515'} target={'_blank'}><FaGithub /></Link>
@@ -49,7 +49,7 @@ function Header(): ReactElement {
           <div className={'pages-link'}>
             <Link to={'/'}> Home </Link>
             <Link to={'/projects'}> Project </Link>
-            <Link to={'/abouts'}> About </Link>
+            <Link to={'/about'}> About </Link>
           </div>
           <div className={'socials'}>
             <Link to={'https://www.github.com/jojothomas1515'} target={'_blank'}><FaGithub /></Link>
