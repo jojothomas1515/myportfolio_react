@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b12e6a55.css",
+    "main.js": "/static/js/main.65434477.js",
+    "static/js/787.955598f8.chunk.js": "/static/js/787.955598f8.chunk.js",
+    "static/media/meetdev.png": "/static/media/meetdev.e8944cb319c582db1913.png",
+    "static/media/javascript-39397.png": "/static/media/javascript-39397.cae65a84867e9d6ad7bf.png",
+    "static/media/jojo_thomas.jpeg": "/static/media/jojo_thomas.7c80da76b094c1041d4b.jpeg",
+    "static/media/pngegg.png": "/static/media/pngegg.457fee1e62911df9d399.png",
+    "static/media/c_logo.png": "/static/media/c_logo.83dfa097dfa94f707a41.png",
+    "static/media/python-logo-only.png": "/static/media/python-logo-only.632369df831d16241b59.png",
+    "static/media/pngwing.com.png": "/static/media/pngwing.com.39a0f4c3d981885c64f8.png",
+    "static/media/django-logo-negative.png": "/static/media/django-logo-negative.1561b91d7b75f3ca2814.png",
+    "static/media/bash_logo.png": "/static/media/bash_logo.fb26e2df76f5535e4fad.png",
+    "index.html": "/index.html",
+    "main.b12e6a55.css.map": "/static/css/main.b12e6a55.css.map",
+    "main.65434477.js.map": "/static/js/main.65434477.js.map",
+    "787.955598f8.chunk.js.map": "/static/js/787.955598f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b12e6a55.css",
+    "static/js/main.65434477.js"
+  ]
+}
