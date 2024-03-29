@@ -1,7 +1,8 @@
 .featured {
   display: flex;
-
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   .featured_project_card {
     position: relative;
