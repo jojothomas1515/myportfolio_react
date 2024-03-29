@@ -14,6 +14,10 @@ function Projects(): React.JSX.Element {
                              description={'A platform to connect dev with people who need them'}
                              githubLink={'https://github.com/Ayobami6/MeetDevs'}
                              liveLink={'https://meet-devs.vercel.app'} />
+        <FeaturedProjectCard image={require('../images/projects/jojopage.jpeg')} alt={'Jojo\'s page screenshot'}
+                             title={'Jojo Page'} description={'Basic implementation of a blog webapp'}
+                             githubLink={'https://github.com/jojothomas1515/JojoProject'}
+                             liveLink={'https://jojopage.urbangeek.tech'} />
       </FeaturedProjects>
       <ContactMe />
     </main>

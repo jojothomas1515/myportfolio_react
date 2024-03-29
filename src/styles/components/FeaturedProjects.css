@@ -1,3 +1,7 @@
+.featured {
+  display: flex;
+  gap: 1rem;
+}
 .featured .featured_project_card {
   position: relative;
   margin-top: 1rem;
@@ -5,18 +9,16 @@
   border: 1px solid #274142;
   overflow: hidden;
   max-width: 400px;
+  width: 400px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   background-color: #274142;
   color: white;
   transition: all 0.3s ease-in-out;
   gap: 0.5rem;
-}
-.featured .featured_project_card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
+  background-position: center;
+  background-size: cover;
 }
 .featured .featured_project_card:hover {
   box-shadow: 0 0 10px #274142;
@@ -44,6 +46,10 @@
   border-radius: 50%;
   color: #274142;
   background-color: rgb(255, 255, 255);
+  transition: color 100ms ease-in-out;
+}
+.featured .featured_project_card .view_live:hover {
+  color: lightblue;
 }
 .featured .featured_project_card .view_github {
   position: absolute;
@@ -55,11 +61,16 @@
   border-radius: 50%;
   color: #274142;
   background-color: rgb(255, 255, 255);
+  transition: color 100ms ease-in-out;
+}
+.featured .featured_project_card .view_github:hover {
+  color: black;
 }
 .featured .featured_project_card p {
   font-size: 1rem;
   position: absolute;
   left: 1rem;
+  right: 1rem;
   background-color: #274142;
   color: white;
   padding: 0.2rem 0.5rem;

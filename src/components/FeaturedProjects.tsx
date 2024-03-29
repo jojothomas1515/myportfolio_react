@@ -34,8 +34,7 @@ export const FeaturedProjectCard: React.FC<FeaturedProjectCardProps> =
      liveLink,
    }): React.JSX.Element => {
     return (
-      <div className='featured_project_card'>
-        <img src={image} alt={alt} />
+      <div className='featured_project_card' style={{backgroundImage: `url(${image})`}}>
         <div className='featured_project_card_details'>
           <h3>{title}</h3>
           <p>{description}</p>
