@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab7be8b9.css",
-    "main.js": "/static/js/main.79d5e149.js",
+    "main.css": "/static/css/main.c353cc48.css",
+    "main.js": "/static/js/main.34bcfe9b.js",
     "static/js/787.955598f8.chunk.js": "/static/js/787.955598f8.chunk.js",
     "static/media/meetdev.png": "/static/media/meetdev.e8944cb319c582db1913.png",
     "static/media/javascript-39397.png": "/static/media/javascript-39397.cae65a84867e9d6ad7bf.png",
     "static/media/jojopage.jpeg": "/static/media/jojopage.5bc3091b95fb2dbf2021.jpeg",
     "static/media/jojo_thomas.jpeg": "/static/media/jojo_thomas.7c80da76b094c1041d4b.jpeg",
+    "static/media/jojobackend_screenshot.jpeg": "/static/media/jojobackend_screenshot.6be9c2063c0415eab8b5.jpeg",
     "static/media/pngegg.png": "/static/media/pngegg.457fee1e62911df9d399.png",
     "static/media/c_logo.png": "/static/media/c_logo.83dfa097dfa94f707a41.png",
     "static/media/python-logo-only.png": "/static/media/python-logo-only.632369df831d16241b59.png",
@@ -14,12 +15,12 @@
     "static/media/django-logo-negative.png": "/static/media/django-logo-negative.1561b91d7b75f3ca2814.png",
     "static/media/bash_logo.png": "/static/media/bash_logo.fb26e2df76f5535e4fad.png",
     "index.html": "/index.html",
-    "main.ab7be8b9.css.map": "/static/css/main.ab7be8b9.css.map",
-    "main.79d5e149.js.map": "/static/js/main.79d5e149.js.map",
+    "main.c353cc48.css.map": "/static/css/main.c353cc48.css.map",
+    "main.34bcfe9b.js.map": "/static/js/main.34bcfe9b.js.map",
     "787.955598f8.chunk.js.map": "/static/js/787.955598f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab7be8b9.css",
-    "static/js/main.79d5e149.js"
+    "static/css/main.c353cc48.css",
+    "static/js/main.34bcfe9b.js"
   ]
 }

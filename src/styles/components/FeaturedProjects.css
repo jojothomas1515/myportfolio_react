@@ -1,8 +1,13 @@
 .featured {
   display: flex;
-  gap: 1rem;
+  gap: 0.2rem;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .featured {
+    justify-content: space-around;
+  }
 }
 .featured .featured_project_card {
   position: relative;
