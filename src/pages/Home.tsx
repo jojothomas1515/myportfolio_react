@@ -66,6 +66,10 @@ class Home extends Component {
                                    title={'Jojo Page'} description={'Basic implementation of a blog webapp'}
                                    githubLink={'https://github.com/jojothomas1515/JojoProject'}
                                    liveLink={'https://jojopage.urbangeek.tech'} />
+              <FeaturedProjectCard image={require('../images/projects/jojobackend_screenshot.jpeg.jpeg')} alt={'Jojo\'s backend screenshot'}
+                                   title={'Jojo\'s Backend'} description={'Basic implementation of a blog webapp'}
+                                   githubLink={'https://github.com/jojothomas1515/JojoBackend'}
+                                   liveLink={'https://jojobackend.urbangeek.tech/api/docs'} />
             </FeaturedProjects>
 
           </section>
